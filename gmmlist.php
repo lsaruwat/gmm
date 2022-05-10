@@ -9,7 +9,7 @@ else $page = 0;
 
 
 function getStartByPage($page, $limit){
-	return $page*$limit
+	return $page*$limit;
 }
 
 function getMaxPage($size, $limit){
