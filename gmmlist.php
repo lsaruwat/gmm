@@ -27,5 +27,5 @@ for($i=$startVideo; $i<$endVideo; $i++){
 }
 
 for($i=0; $i<$maxPages; $i++){
-	echo '<a href="/?page=' . $i . '">' . $i . '</a>';
+	echo '<a href="/gmm/gmmlist.php?page=' . $i . '">' . $i . '</a>';
 }
