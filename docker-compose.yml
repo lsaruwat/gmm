@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  gmm:
+    restart: unless-stopped
+    container_name: gmm
+    image: mattrayner/lamp:latest-1804
+    volumes:
+      - ./:/var/www/html/gmm
+    environment:
+      - apiUrl=http://scriptingaway.com/api
+    ports:
+      - 80:80
+      - 443:443
