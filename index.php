@@ -21,9 +21,9 @@ catch(Exception $e){
 
 
 
-echo '<div class="season"><a href="/gmm/seasons.php?season=0>Pre GMM</a></div>';
+echo '<div class="season"><a href="/gmm/combined.php?season=0>Pre GMM</a></div>';
 for($i=1; $i<count($seasonArray); $i++){
-	echo '<div class="season"><a href="/gmm/seasons.php?season=' . $i . '">Season ' . $i . '</a></div>';
+	echo '<div class="season"><a href="/gmm/combined.php?season=' . $i . '">Season ' . $i . '</a></div>';
 }
 
 print_r($seasonArray, true);
@@ -36,9 +36,15 @@ if($season>-1){
 
 	for($i=$startVideo; $i<$endVideo; $i++){
 		echo '<iframe frameborder="0" scrolling="no" marginheight="5" marginwidth="5"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/' . $seasonArray[$season][$i] . '"></iframe>';
+		if(isset($moreArray[$season][$i])){
+			echo '<iframe frameborder="0" scrolling="no" marginheight="5" marginwidth="5"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/' . $moreArray[$season][$i] . '"></iframe>';
+		}
+		else{
+			echo '<div class="placeholder">No GMMore episode</div>';
+		}
 	}
 
 	for($i=0; $i<$maxPages; $i++){
-		echo '<a href="/gmm/seasons.php?season=' . $season . '&page=' . $i . '">' . $i . '</a>';
+		echo '<a href="/gmm/combined.php?season=' . $season . '&page=' . $i . '">' . $i . '</a>';
 	}
 }
