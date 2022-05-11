@@ -45,14 +45,14 @@ $dummyArr = array();
 
 $seasonArray = array(
 	array_reverse($pregmmlinks),
-	array_reverse($season1links),
-	array_reverse($season2links),
+	$season1links,
+	$season2links,
 	array_reverse($season3links),
 	array_reverse($season4links),
 	array_reverse($season5links),
 	array_reverse($season6links),
 	array_reverse($season7links),
-	array_reverse($season8links),
+	$season8links,
 	array_reverse($season9links),
 	array_reverse($season10links),
 	array_reverse($season11links),
