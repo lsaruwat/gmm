@@ -77,7 +77,7 @@ $moreArray = array(
 	$more5links,
 	$more6links,
 	$more7links,
-	$more8links,
+	array_reverse($more8links),
 	$more9links,
 	$more10links,
 	$more11links,
