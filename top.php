@@ -7,4 +7,5 @@
 	<div class="nav-item"><a href="seasons.php">GMM</a></div>
 	<div class="nav-item"><a href="combined.php">GMM+GMMORE</a></div>
 	<div class="nav-item"><a href="raw.php">Raw Links</a></div>	
+	<div class="nav-item"><a href="search.php">Search</a></div>	
 </div>
